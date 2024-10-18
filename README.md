@@ -6,7 +6,7 @@ A clean interface for duck duck go in dark mode.
 
 prerequisite: Stylus app installed in your browser
 
-[![Static Badge](https://img.shields.io/badge/Install-Userstyle?style=flat&label=Install%20Directly%20with%20Stylus)](stylus://install-from-url/https://github.com/revoconner/duckduckgo-clean/raw/refs/heads/main/duckduckgo.css)
+[![Static Badge](https://img.shields.io/badge/Install-Userstyle?style=flat&label=Install%20Directly%20with%20Stylus)](https://github.com/revoconner/duckduckgo-clean/raw/refs/heads/main/duckduckgo.user.css)
 
 
 
