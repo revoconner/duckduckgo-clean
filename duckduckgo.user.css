@@ -8,77 +8,87 @@
 @updateURL    https://github.com/revoconner/duckduckgo-clean/raw/refs/heads/main/duckduckgo.user.css
 @license      GPLv2
 ==/UserStyle== */
-
-
 @-moz-document domain("duckduckgo.com") {
-/* Shadows */
+    /* Shadows */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article {
+        box-shadow: 0 4px 10px rgb(12, 12, 12);
+        margin-top: 5%;
+        position: relative;
+        width: 150%;
+    }
 
-div#web_content_wrapper div#react-layout div div div div section ol li article {
-    box-shadow: 0 4px 10px rgb(12, 12, 12);
-    margin-top: 5%;
-    position: relative;
-    width: 150%;
-}
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1):nth-child(1) {
 
-/* URL color */
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(2) > div > a {
-    color: #b4b3b4;
-    font-family: "Segoe UI Light";
-}
-
-/* Results */
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(3) > h2 > a {
-    color: #81a9bd;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: 400;
-    transition: color 0.25s ease 0s; /* 0.5s for returning */
-}
-
-/* Results - visited */
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(3) > h2 > a:visited {
-    color: #8a7394;
-}
+        position: relative;
+        width: 150%;
+    }
 
 
-/* Results - hover */
-div#web_content_wrapper div#react-layout div div div div section ol li article:hover > div:nth-child(3) > h2 > a {
-    text-decoration: none;
-    color: #d2f0ff;
-}
+
+    /* URL color */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article>div:nth-child(2)>div>a {
+        color: #b4b3b4;
+        font-family: "Segoe UI Light";
+    }
+
+    /* Results */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article>div:nth-child(3)>h2>a {
+        color: #81a9bd;
+        font-family: "Segoe UI", sans-serif;
+        font-weight: 400;
+        transition: color 0.25s ease 0s;
+        /* 0.5s for returning */
+    }
+
+    /* Results - visited */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article> div:nth-child(3)>h2>a:visited {
+       color: #8a7394;
+    }
 
 
-/* Previews */
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(4) > div > div > span >span {
-    color: #757575;
-    font-family: "calibri", "Segoe UI", sans-serif;
-    font-weight: 400;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    line-height: 3em; /* Adjust the value to increase the space */
-    height: 2em;
-}
+    /* Results - hover */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article:hover>div:nth-child(3)>h2>a {
+        text-decoration: none;
+        color: #d2f0ff;
+    }
 
 
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(4) > div > div > span * {
-    display: inline;
-}
+    /* Previews */
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article>div:nth-child(4)>div>div>span>span {
+        color: #757575;
+        font-family: "calibri", "Segoe UI", sans-serif;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        line-height: 3em;
+        /* Adjust the value to increase the space */
+        height: 2em;
+    }
 
-/* special links */
-div#web_content_wrapper div#react-layout div div div div section ol li article > div:nth-child(5) > div > ul > li >a {
-       color: #81a9bd;
-}
 
-/* special links (right side stuff)*/
-.related-searches {
-    left: 100%;
-    position:relative;
-    color: #b4b3b4;
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article>div:nth-child(4) > div > div > span * {
+        display: inline;
+    }
+
+    /* special links */
+    div#web_content_wrapper >div#react-layout >div >div> div> div> section:nth-child(1) >ol >li>article > div:nth-child(5) > div > ul > li > a {
+        color: #81a9bd;
+    }
+
+    /* special links (right side stuff)*/
+    .related-searches * {
+        color: #b4b3b4;
+    }
+    div#web_content_wrapper >div#react-layout >div >div >div >div>section:nth-child(2) {
+
+        left: 20%;
+        position: relative;
+        width: 100%;
+    }
     
-}
-.related-searches *{
-    color: #b4b3b4;
-    
-}
+    div#web_content_wrapper >div#react-layout >div >div >div >div>section:nth-child(2) * {
+        color: #b4b3b4;
+    }
 }
