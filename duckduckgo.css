@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name         duckduckgo.css
+@description  Clean interface for duck duck go
+@namespace    https://github.com/revoconner/duckduckgo-clean
+@author       https://github.com/revoconner
+@version      1.0
+@homepageURL  https://revoconner.com
+@updateURL    https://github.com/revoconner/duckduckgo-clean/raw/refs/heads/main/duckduckgo.css
+@license      GPLv2
+==/UserStyle== */
+
+
 @-moz-document domain("duckduckgo.com") {
 /* Shadows */
 
