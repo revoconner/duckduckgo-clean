@@ -3,7 +3,7 @@
 @description  Clean interface for duck duck go
 @namespace    https://github.com/revoconner/duckduckgo-clean
 @author       https://github.com/revoconner
-@version      1.0
+@version      1.3
 @homepageURL  https://revoconner.com
 @updateURL    https://github.com/revoconner/duckduckgo-clean/raw/refs/heads/main/duckduckgo.user.css
 @license      GPLv2
@@ -13,14 +13,15 @@
     div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article {
         box-shadow: 0 4px 10px rgb(12, 12, 12);
         margin-top: 5%;
-        position: relative;
-        width: 150%;
     }
 
-    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1):nth-child(1) {
-
+    div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1) {
         position: relative;
+    }
+        div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li {
         width: 150%;
+        
+            
     }
 
 
@@ -53,7 +54,7 @@
     }
 
 
-    /* Previews */
+    /*only one line of preview */
     div#web_content_wrapper>div#react-layout>div>div>div>div>section:nth-child(1)>ol>li>article>div:nth-child(4)>div>div>span>span {
         color: #757575;
         font-family: "calibri", "Segoe UI", sans-serif;
@@ -61,7 +62,6 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 100%;
         line-height: 3em;
         /* Adjust the value to increase the space */
         height: 2em;
